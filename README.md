@@ -30,7 +30,7 @@ It calculates AQI based on **Indian AQI standards**, visualizes pollutant concen
 ## Project Structure
 ```
 AQI-Analysis-Python/
-│── aqi.py
+│── main.py
 │── requirements.txt
 │── .gitignore
 │── README.md
