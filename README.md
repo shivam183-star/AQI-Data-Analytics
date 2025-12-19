@@ -43,8 +43,8 @@ AQI-Analysis-Python/
 
 ### 1️. Clone the repository
 ```bash
-git clone https://github.com/yourusername/AQI-Analysis-Python.git
-cd AQI-Analysis-Python
+git clone https://github.com/shivam183-star/AQI-Data-Analytics.git
+cd AQI-Data-Analytics
 ```
 
 ### 2️. Install dependencies
@@ -63,7 +63,7 @@ API_KEY=your_openweather_api_key_here
 
 ## Run the Project
 ```bash
-python aqi.py
+python main.py
 ```
 
 ---
