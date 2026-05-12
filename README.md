@@ -107,6 +107,7 @@ AQI-Dashboard/
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── LICENSE
 ├── .env
 ├── assets/
 │   ├── dashboard_home.png
