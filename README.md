@@ -99,14 +99,21 @@ Implemented:
 
 ---
 
-## Project Structure
-```
-AQI-Analysis-Python/
-│── aqi.py
-│── requirements.txt
-│── .gitignore
-│── README.md
-│── .env   (not pushed to GitHub)
+# 📂 Project Structure
+
+```text
+AQI-Dashboard/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .env
+├── assets/
+│   ├── dashboard_home.png
+│   ├── pollutant_chart.png
+│   └── historical_aqi.png
+│
+└── .gitignore
 ```
 
 ---
@@ -256,6 +263,7 @@ Compared to the initial terminal-based version, this dashboard includes:
 
 * Full Streamlit UI
 * Responsive layout
+* API validation
 * Optimized API requests
 * Interactive charts
 * Streamlit caching
@@ -275,7 +283,6 @@ Planned upgrades for future versions:
 
 ---
 
-
 # 🧪 Example Usage
 
 1. Enter city name in sidebar
@@ -291,44 +298,67 @@ Planned upgrades for future versions:
 
 Contributions are welcome.
 
-If you'd like to improve this project:
+If you want to improve this project:
 
 1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push the branch
-5. Open a Pull Request
+2. Create a new branch
+3. Commit changes
+4. Push to branch
+5. Open Pull Request
 
 ---
 
 # 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
+
+You can freely use, modify, and distribute this project.
 
 ---
 
 # 👨‍💻 Author
 
-## Shivam Singh
+## Shivam
 
-### Connect with Me
+Student Developer passionate about:
 
-- [GitHub](https://github.com/shivam183-star)
-- [LinkedIn](https://www.linkedin.com/in/shivam-singh-15b79a31a/)
+* Python
+* Data Visualization
+* Streamlit Dashboards
+* APIs
+* Machine Learning
+
 ---
 
 # ⭐ Support
 
-If you found this project useful:
+If you liked this project:
 
-- Give it a ⭐ on GitHub
-- Share it with others
-- Fork the repository
+* ⭐ Star the repository
+* 🍴 Fork the project
+* 🛠️ Contribute improvements
 
 ---
 
-# 📌 Note
+# 📬 Contact
 
-This project is intended for educational and portfolio purposes.
+Add your contact links here:
 
-Data belongs to the respective owner and sources.
+```text
+LinkedIn:
+Portfolio:
+Email:
+```
+
+---
+
+# 🙌 Acknowledgements
+
+Special thanks to:
+
+* OpenWeatherMap API
+* Streamlit
+* Plotly
+* Python Community
+
+---
