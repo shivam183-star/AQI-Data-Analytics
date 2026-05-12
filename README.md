@@ -14,10 +14,8 @@ This project allows users to:
 
 # 🚀 Live Demo
 
-```text
+🔗 **Streamlit App:**  
 https://aqi-data-analytics-2ckkxaqlmc25rqmtapjimr.streamlit.app/
-```
-
 ---
 
 # 📸 Screenshots
