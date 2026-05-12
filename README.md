@@ -14,10 +14,8 @@ This project allows users to:
 
 # 🚀 Live Demo
 
-Add your deployed Streamlit app URL here:
-
 ```text
-https://your-streamlit-app-url.streamlit.app
+https://aqi-data-analytics-2ckkxaqlmc25rqmtapjimr.streamlit.app/
 ```
 
 ---
