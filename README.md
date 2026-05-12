@@ -107,6 +107,7 @@ AQI-Dashboard/
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── LICENSE
 ├── .env
 ├── assets/
 │   ├── dashboard_home.png
@@ -298,67 +299,38 @@ Planned upgrades for future versions:
 
 Contributions are welcome.
 
-If you want to improve this project:
+If you'd like to improve this project:
 
 1. Fork the repository
-2. Create a new branch
-3. Commit changes
-4. Push to branch
-5. Open Pull Request
+2. Create a feature branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
 
 ---
 
 # 📄 License
 
-This project is licensed under the MIT License.
-
-You can freely use, modify, and distribute this project.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 # 👨‍💻 Author
 
-## Shivam
+## Shivam Singh
 
-Student Developer passionate about:
+### Connect with Me
 
-* Python
-* Data Visualization
-* Streamlit Dashboards
-* APIs
-* Machine Learning
-
+- [GitHub](https://github.com/shivam183-star)
+- [LinkedIn](https://www.linkedin.com/in/shivam-singh-15b79a31a/)
 ---
 
 # ⭐ Support
 
-If you liked this project:
+If you found this project useful:
 
-* ⭐ Star the repository
-* 🍴 Fork the project
-* 🛠️ Contribute improvements
-
----
-
-# 📬 Contact
-
-Add your contact links here:
-
-```text
-LinkedIn:
-Portfolio:
-Email:
-```
-
----
-
-# 🙌 Acknowledgements
-
-Special thanks to:
-
-* OpenWeatherMap API
-* Streamlit
-* Plotly
-* Python Community
+- Give it a ⭐ on GitHub
+- Share it with others
+- Fork the repository
 
 ---
