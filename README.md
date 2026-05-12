@@ -99,21 +99,14 @@ Implemented:
 
 ---
 
-# 📂 Project Structure
-
-```text
-AQI-Data-Analytics/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── .env (not pushed to github)
-├── assets/
-│   ├── dashboard_home.png
-│   ├── pollutant_chart.png
-│   └── historical_aqi.png
-│
-└── .gitignore
+## Project Structure
+```
+AQI-Analysis-Python/
+│── aqi.py
+│── requirements.txt
+│── .gitignore
+│── README.md
+│── .env   (not pushed to GitHub)
 ```
 
 ---
