@@ -1,140 +1,341 @@
-# Air Quality Index (AQI) Analysis using Python & OpenWeather API
+# 🌍 AQI Dashboard using Streamlit
 
-## Overview
-This project is a **Python-based AQI analysis tool** that fetches **real-time and historical air pollution data** for any city using the **OpenWeather Air Pollution API**.
+A modern and interactive **Air Quality Index (AQI) Dashboard** built using **Python**, **Streamlit**, **Plotly**, and the **OpenWeatherMap API**.
 
-It calculates AQI based on **Indian AQI standards**, visualizes pollutant concentrations, and displays **year-wise AQI trends**.
+This project allows users to:
 
----
-
-## Features
-- City-based AQI analysis
-- Pollutant concentration bar graph (PM2.5, PM10, CO, NO₂, SO₂, O₃)
-- Historical AQI trend analysis (year-wise)
-- AQI calculation using **Indian AQI standards**
-- Secure API key handling with `.env`
-- Menu-driven interactive CLI
+* Check real-time AQI levels for any city
+* View pollutant concentrations
+* Analyze historical AQI trends
+* Visualize pollution data using interactive charts
+* Download AQI history data as CSV
 
 ---
 
-## Tech Stack
-- **Python**
-- **OpenWeather Air Pollution API**
-- `requests`
-- `pandas`
-- `matplotlib`
-- `python-dotenv`
+# 🚀 Live Demo
 
----
+Add your deployed Streamlit app URL here:
 
-## Project Structure
-```
-AQI-Analysis-Python/
-│── aqi.py
-│── requirements.txt
-│── .gitignore
-│── README.md
-│── .env   (not pushed to GitHub)
+```text
+https://your-streamlit-app-url.streamlit.app
 ```
 
 ---
 
-## Setup Instructions
+# 📸 Screenshots
 
-### 1️. Clone the repository
+## 🏠 Dashboard Home
+
+<img width="100%" alt="Dashboard Home" src="assets/dashboard_home.png">
+
+---
+
+## 📊 Pollutant Concentration Chart
+
+<img width="100%" alt="Pollutant Chart" src="assets/pollutant_chart.png">
+
+---
+
+## 📈 Historical AQI Trend
+
+<img width="100%" alt="Historical AQI" src="assets/historical_aqi.png">
+
+---
+
+# ✨ Features
+
+## 🌍 Real-Time AQI Monitoring
+
+Get live AQI information for any city using the OpenWeatherMap Air Pollution API.
+
+---
+
+## 📊 Interactive Data Visualization
+
+Interactive charts built using Plotly for:
+
+* Pollutant concentrations
+* Historical AQI trends
+* AQI comparisons
+
+---
+
+## 📈 Historical AQI Analysis
+
+Analyze AQI trends over multiple years.
+
+The dashboard calculates yearly AQI averages and displays them using dynamic graphs.
+
+---
+
+## 📥 Export AQI Data
+
+Download historical AQI data as CSV directly from the dashboard.
+
+---
+
+## ⚡ Fast and Optimized
+
+Implemented:
+
+* Streamlit caching
+* Error handling
+* Optimized API requests
+* Efficient data processing
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology         | Usage                     |
+| ------------------ | ------------------------- |
+| Python             | Core Programming Language |
+| Streamlit          | Dashboard UI              |
+| Plotly             | Interactive Charts        |
+| Pandas             | Data Analysis             |
+| Requests           | API Calls                 |
+| OpenWeatherMap API | AQI and Pollution Data    |
+| Dotenv             | Environment Variables     |
+
+---
+
+# 📂 Project Structure
+
+```text
+AQI-Data-Analytics/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .env (not pushed to github)
+├── assets/
+│   ├── dashboard_home.png
+│   ├── pollutant_chart.png
+│   └── historical_aqi.png
+│
+└── .gitignore
+```
+
+---
+
+# ⚙️ Installation Guide
+
+## 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/shivam183-star/AQI-Data-Analytics.git
+```
+
+---
+
+## 2️⃣ Navigate to Project Directory
+
+```bash
 cd AQI-Data-Analytics
 ```
 
-### 2️. Install dependencies
+---
+
+## 3️⃣ Create Virtual Environment (Optional but Recommended)
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Mac/Linux
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## 4️⃣ Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️. Create `.env` file
-Create a file named `.env` in the project root:
+---
+
+# 🔑 OpenWeatherMap API Setup
+
+## Step 1: Create Account
+
+Visit:
+
+```text
+https://openweathermap.org/api
 ```
-API_KEY=your_openweather_api_key_here
-```
-> Never share or push your API key to GitHub
+
+Create a free account.
 
 ---
 
-## Run the Project
+## Step 2: Generate API Key
+
+After logging in:
+
+* Open API Keys section
+* Generate a new API key
+* Copy the key
+
+---
+
+## Step 3: Create `.env` File
+
+Inside project root folder:
+
+```text
+.env
+```
+
+Add:
+
+```env
+API_KEY=your_api_key_here
+```
+
+---
+
+# ▶️ Running the Application
+
+Run the Streamlit app:
+
 ```bash
-python main.py
+streamlit run app.py
 ```
 
 ---
 
-## Program Options
-After entering the city name:
+# 📊 AQI Categories
+
+| AQI Range | Category     |
+| --------- | ------------ |
+| 0 – 50    | Good         |
+| 51 – 100  | Satisfactory |
+| 101 – 200 | Moderate     |
+| 201 – 300 | Poor         |
+| 301 – 400 | Very Poor    |
+| 401 – 500 | Severe       |
+
+---
+
+# 📌 API Endpoints Used
+
+## 📍 Geocoding API
+
+Used to fetch latitude and longitude from city name.
+
+```text
+http://api.openweathermap.org/geo/1.0/direct
 ```
-1. Show AQI
-2. Show pollutant concentrations
-3. Show historical AQI data
-4. Exit
+
+---
+
+## 🌫️ Air Pollution API
+
+Used to fetch real-time pollution data.
+
+```text
+http://api.openweathermap.org/data/2.5/air_pollution
 ```
 
 ---
 
-## AQI Categories (Indian Standard)
+## 📈 Historical Air Pollution API
 
-| AQI Range | Category |
-|---------|----------|
-| 0–50 | Good |
-| 51–100 | Satisfactory |
-| 101–200 | Moderate |
-| 201–300 | Poor |
-| 301–400 | Very Poor |
-| 401+ | Severe |
+Used for AQI trend analysis.
+
+```text
+http://api.openweathermap.org/data/2.5/air_pollution/history
+```
 
 ---
 
-## AQI Calculation Logic
-- AQI is calculated using **PM2.5** and **PM10** concentrations
-- Final AQI = **max(AQI_PM2.5, AQI_PM10)**
-- Breakpoints follow **Indian AQI guidelines**
+# 🧠 Improvements Implemented
+
+Compared to the initial terminal-based version, this dashboard includes:
+
+* Full Streamlit UI
+* Responsive layout
+* Optimized API requests
+* Interactive charts
+* Streamlit caching
+* Downloadable reports
+* Better scalability
 
 ---
 
-## API Used
-**OpenWeather Air Pollution API**
-- Real-time air quality data
-- Historical air quality data
+# 🚀 Future Improvements
+
+Planned upgrades for future versions:
+
+* 🌤️ Weather integration
+* 🗺️ AQI heatmaps
+* 🌎 Compare multiple cities
+* 🤖 AQI prediction using Machine Learning
 
 ---
 
-## Output
-- Bar chart for pollutant concentrations
-- Line graph for yearly average AQI trend
+
+# 🧪 Example Usage
+
+1. Enter city name in sidebar
+2. View real-time AQI
+3. Analyze pollutant concentrations
+4. Explore historical AQI trends
+5. Download AQI data
 
 ---
 
-## Use Cases
-- Environmental data analysis
-- College mini/major projects
-- Internship & resume projects
-- AQI trend visualization
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you'd like to improve this project:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
 
 ---
 
-## Future Improvements
-- Streamlit-based web dashboard
-- Export AQI data to CSV
-- City-to-city AQI comparison
-- API call optimization with caching
+# 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Author
-**Shivam**
-- Student | Python Learner
-- @shivam183-star
+# 👨‍💻 Author
+
+## Shivam Singh
+
+### Connect with Me
+
+- [GitHub](https://github.com/shivam183-star)
+- [LinkedIn](https://www.linkedin.com/in/shivam-singh-15b79a31a/)
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+- Give it a ⭐ on GitHub
+- Share it with others
+- Fork the repository
 
 ---
 
-## Support
-If you find this project useful, consider giving it a star on GitHub!
+# 📌 Note
 
+This project is intended for educational and portfolio purposes.
+
+Data belongs to the respective owner and sources.
